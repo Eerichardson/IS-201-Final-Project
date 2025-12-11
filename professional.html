@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Emily Richardson — Professional Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6f7f3; 
+      --muted:#5b6b58; 
+      --pastel-green-1:#dff5e1; 
+      --pastel-green-2:#c9eecf; 
+      --pastel-yellow:#fff6e6; 
+      --forest:#103d2f; 
+      --accent:#9bbf9a; 
+      --card:#ffffff; 
+      --radius:6px; 
+      --maxw:980px; 
+      font-family: 'Quicksand', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#fbfef9);color:#213226}
+    .wrap{min-height:100%;display:flex;align-items:flex-start;justify-content:center;padding:32px}
+    .card{width:100%;max-width:var(--maxw);background:linear-gradient(180deg,var(--card),#fbfff7);border-radius:4px;border:1px solid rgba(16,61,47,0.06);box-shadow:0 8px 28px rgba(16,61,47,0.06);overflow:hidden}
+
+    header.site-header{display:flex;align-items:center;justify-content:space-between;padding:28px 36px;border-bottom:4px solid rgba(16,61,47,0.04);background:linear-gradient(90deg,#b7e4c7,#74c69d);}
+    .name{font-size:28px;color:var(--forest);font-weight:700;letter-spacing:0.6px}
+    nav.main-nav{display:flex;gap:10px}
+    nav.main-nav a{color:var(--forest);text-decoration:none;padding:8px 12px;border-radius:6px;font-weight:600}
+    nav.main-nav a:hover{background:var(--accent);color:white}
+
+    .hero{display:grid;grid-template-columns:220px 1fr;gap:20px;padding:28px 36px}
+    .photo{width:220px;height:220px;border-radius:6px;overflow:hidden;border:4px solid rgba(16,61,47,0.06)}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .summary{padding-top:6px}
+    .profile-title{font-size:18px;color:var(--forest);font-weight:700;margin:0}
+    .profile-sub{color:var(--muted);margin:6px 0 12px}
+    .cta{display:flex;gap:10px;margin-top:12px}
+    .btn{background:var(--forest);color:white;padding:8px 12px;border-radius:6px;text-decoration:none;font-weight:700}
+
+    .content{display:grid;grid-template-columns:1fr 320px;gap:24px;padding:18px 36px 36px}
+    section{background:linear-gradient(180deg,transparent,transparent);padding:12px;border-radius:6px}
+    .card-section{background:var(--card);padding:16px;border-radius:6px;border:1px solid rgba(16,61,47,0.03)}
+    h2{margin:4px 0 8px;color:var(--forest);font-size:18px}
+    p{color:#2f3f35;line-height:1.5}
+    ul{padding-left:18px;color:#324b3e}
+
+    aside.right {position:relative}
+    .skills{display:flex;flex-direction:column;gap:8px}
+    .skill-pill{padding:8px 10px;border-radius:6px;background:linear-gradient(180deg,var(--pastel-green-1),var(--pastel-green-2));font-weight:600;color:var(--forest)}
+
+    .edu-item{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed rgba(16,61,47,0.04)}
+    .muted{color:var(--muted)}
+
+    .course-list{display:flex;flex-wrap:wrap;gap:8px}
+    .course{padding:8px 10px;border-radius:6px;background:#f3fbf0;border:1px solid rgba(16,61,47,0.04);color:var(--forest);font-weight:700}
+
+    .job{padding:10px 0;border-bottom:1px solid rgba(16,61,47,0.03)}
+    .job h4{margin:0;color:var(--forest);font-weight:700}
+    .job .dates{font-size:13px;color:var(--muted)}
+
+    footer{padding:18px 36px;border-top:1px solid rgba(16,61,47,0.03);display:flex;justify-content:space-between;align-items:center}
+    footer .small{color:var(--muted)}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:140px 1fr}
+      .content{grid-template-columns:1fr}
+      nav.main-nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="border-accent top-left-accent" style="position:fixed;left:8px;top:8px;border-radius:6px;z-index:0"></div>
+  <div class="border-accent bottom-right-accent" style="position:fixed;right:8px;bottom:8px;border-radius:6px;z-index:0"></div>
+  <div class="wrap">
+    <div class="card" role="main">
+      <header class="site-header">
+        <div class="name">EMILY RICHARDSON</div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#courses">Business Classes</a>
+          <a href="#experience">Experience</a>
+          <a href="#extracurriculars">Extracurriculars</a>
+          <a href="#skills">Skills</a>
+        </nav>
+      </header>
+
+      <div class="hero">
+        <div class="photo">
+          <img src="images/headshot.jpg" alt="profile pic">
+        </div>
+        <div class="summary">
+          <p class="profile-title">Pre-Business Student pursuing Accounting</p>
+          <p class="profile-sub">Brigham Young University — 3.9 GPA • Aspiring accountant focused on accuracy, process improvement, and collaboration.</p>
+          <p class="card-section">Profile: To secure a position that will help me develop new skills to benefit others. Strengths include attention to detail, strong collaboration, and reliability.</p>
+          <div class="cta">
+            <a class="btn" href="#experience">View Experience</a>
+            <a class="btn" href="#education">Education</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <main>
+          <section id="about" class="card-section">
+            <img src="images/cactus.jpg" style="width:100%;border-radius:6px;margin-bottom:12px" alt="cactus">
+            <h2>About</h2>
+            <p>I am a Pre-Business student at Brigham Young University from Mesa, AZ working toward an Accounting major. I have maintained strong academic performance (3.9 GPA) while gaining hands-on work experience across supply chain, facilities operations, and student accounting roles. I care about process, service, and continuous improvement.</p>
+          </section>
+
+          <img src="images/byu.jpg" style="width:100%;border-radius:6px;margin-bottom:12px" alt="BYU Campus">
+
+          <section id="education" class="card-section" style="margin-top:12px">
+            <h2>Education</h2>
+            <div class="edu-item"><div><strong>Brigham Young University</strong><div class="muted">Sept 2024 – Current • Pre-Business (Accounting)</div></div><div class="muted">GPA: 3.9</div></div>
+            <div class="edu-item"><div><strong>Brigham Young University–Idaho</strong><div class="muted">Dec 2022</div></div><div class="muted">GPA: 4.0</div></div>
+            <div class="edu-item"><div><strong>Mesa High School</strong><div class="muted">May 2022</div></div><div class="muted">Graduated with honors • Seal of Biliteracy</div></div>
+          </section>
+
+          <section id="courses" class="card-section" style="margin-top:12px">
+            <img src="images/tanner.jpg" style="width:100%;border-radius:6px;margin-bottom:12px" alt="Tanner Building">
+            <h2>Selected Business Courses</h2>
+            <p class="muted">Coursework showcasing a foundation for accounting and information systems:</p>
+            <div class="course-list" style="margin-top:8px">
+              <div class="course">Accounting 200</div>
+              <div class="course">Accounting 310</div>
+              <div class="course">Information Systems 110</div>
+              <div class="course">Information Systems 201</div>
+            </div>
+            <p style="margin-top:12px">I am actively pursuing an Accounting major and have prioritized coursework that develops technical accounting skills and systems thinking.</p>
+          </section>
+
+ <img src="images/experience.jpg" style="width:100%;border-radius:6px;margin-bottom:12px" alt="experience">
+
+          <section id="experience" class="card-section" style="margin-top:12px">
+            <h2>Experience</h2>
+            <div class="job">
+              <h4>Student Accountant — BYU Grants &amp; Contracts Office</h4>
+              <div class="dates">Jan 2026 — Present</div>
+              <p>Perform accounting tasks related to grants administration, assist with invoice reconciliation, and support the Grants team with recordkeeping and internal controls.</p>
+            </div>
+            <div class="job">
+              <h4>Missionary Training Center — Facility Operations</h4>
+              <div class="dates">Sept 2025 — Dec 2025</div>
+              <p>Completed cleaning and facility maintenance assignments around MTC facilities, worked respectfully and efficiently near mission staff and visitors, and demonstrated attention to detail and professionalism.</p>
+            </div>
+            <div class="job">
+              <h4>For the Strength of Youth (FSY) Counselor</h4>
+              <div class="dates">May 2025 — July 2025</div>
+              <p>Led spiritual and activity-based programming for youth, created lesson plans, coordinated schedules, and maintained collaborative leadership within a team.</p>
+            </div>
+            <div class="job">
+              <h4>BYU Campus Store — Supply Chain</h4>
+              <div class="dates">Aug 2024 — May 2025</div>
+              <p>Received and processed incoming orders, scanned inventory, and maintained efficient order workflows.</p>
+            </div>
+            <div class="job">
+              <h4>Valley Wide Recyclers</h4>
+              <div class="dates">June 2024 — Current</div>
+              <p>Performed hands-on recycling tasks, disassembled units, and maintained efficient productivity and safety practices.</p>
+            </div>
+            <div class="job">
+              <h4>Mesa Frozen Yogurt</h4>
+              <div class="dates">June 2020 — Aug 2022</div>
+              <p>Provided courteous customer service and managed multiple responsibilities in a fast-paced environment.</p>
+            </div>
+          </section>
+
+          <section id="extracurriculars" class="card-section" style="margin-top:12px">
+            <h2>Extracurriculars &amp; Leadership</h2>
+            <p>Full-Time Mission (Church of Jesus Christ of Latter-Day Saints): developed lesson plans, performed service, and collaborated in scheduling and outreach activities. Additional interests include hiking, pickleball, and piano.</p>
+          </section>
+        </main>
+
+        <aside class="right">
+          <div class="card-section" id="skills">
+            <h2>Skills &amp; Strengths</h2>
+            <div class="skills">
+              <div class="skill-pill">Accounting fundamentals</div>
+              <div class="skill-pill">QuickBooks / basic reconciliation</div>
+              <div class="skill-pill">Inventory &amp; supply chain basics</div>
+              <div class="skill-pill">Detail-oriented &amp; reliable</div>
+              <div class="skill-pill">Collaboration & teamwork</div>
+              <div class="skill-pill">Time management</div>
+              <div class="skill-pill">Problem-solving</div>
+              <div class="skill-pill">Adaptability</div>
+              <div class="skill-pill">Communication skills</div>
+              <div class="skill-pill">Leadership experience</div>
+              <div class="skill-pill">Microsoft Excel & Office Suite</div>
+              <div class="skill-pill">Process improvement</div>
+            </div>
+          </div>
+
+          <div class="card-section" style="margin-top:12px">
+            <h2>Highlights</h2>
+            <ul>
+              <li>3.9 GPA at BYU</li>
+              <li>Pre-Business major targeting Accounting</li>
+              <li>Experience in supply chain &amp; facilities operations</li>
+            </ul>
+          </div>
+
+          <div class="card-section" style="margin-top:12px">
+            <h2>Hobbies</h2>
+            <p class="muted">Hiking • Pickleball • Piano</p>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <div class="small">Public profile for recruiters — contact information omitted.</div>
+        <div class="small">Designed for recruiters • Emphasis: Accounting coursework &amp; hands-on experience</div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    });
+  </script>
+</body>
+</html>
+
+

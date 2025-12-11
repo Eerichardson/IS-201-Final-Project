@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(250, 222, 227);
+    color: rgb(77, 10, 10);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.common {
+    background-color: rgb(214, 242, 214);
+    border: 2px solid white;
+    position: absolute;
+}
+
+.header {
+    top: 15px;
+    left: 22px;
+    right: 22px;
+    height: 100px;
+    color: black;
+}
+
+.right {
+    height: fit-content;
+    width: 570px;
+    right: 45px;
+    left: 635px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.left {
+    height: fit-content;
+    width: fit-content;
+    right: 540px;
+    left: 60px;
+}
+
+.left2 {
+    height: fit-content;
+    width: 560px;
+    right: 520px;
+    left: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.footer {
+    padding: 10x;
+    position: relative;
+    color: black;
+
+}
+
+.samesize {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.imagerow {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.tableauPlaceholder {
+    right: 35x;
+    left: 630px;
+}
